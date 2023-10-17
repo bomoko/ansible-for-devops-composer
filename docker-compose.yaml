@@ -1,0 +1,21 @@
+version: '3'
+services:
+  driver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./ansible:/root/ansible
+  xray:
+    build:
+      context: .
+      dockerfile: Dockerfile
+  pizza:
+    build:
+      context: .
+      dockerfile: Dockerfile
+  coffee:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
