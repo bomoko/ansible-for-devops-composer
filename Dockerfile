@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 
 # Install OpenSSH Server
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y openssh-server iputils-ping ansible && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y openssh-server sudo iputils-ping ansible && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
